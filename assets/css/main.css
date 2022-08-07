@@ -1,0 +1,84 @@
+header{
+    background-color: #1DBCEE;
+    color: white;
+    /* text-align: center; */
+    height: 7vh;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper_side_img{
+    width: 60vw;
+
+}
+.login_section{
+    position: relative;
+    height: 50vh;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5vw;
+}
+.login_section h1{
+    color: #1DBCEE;
+    text-align: center;
+}
+.login_section input{
+    padding: 1rem 1rem .7rem 2.5rem;
+    border-radius: 20px;
+    border: 1.9px solid #1DBCEE;
+    background: none;
+    width: 250px;
+}
+.login_section .input{
+    position: relative;
+    margin: 25px 0;
+}
+.login_section .input img{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 22px;
+}
+
+.login_section button{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #1DBCEE;
+    color: white;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.login_section button:hover{
+    transform: scale(1.1);
+}
+.creditCard{
+    display: none;
+}
+.blue{
+    color: #1DBCEE;
+}
+.logout{cursor: pointer;}
+@media screen and (max-width: 820px){
+    .wrapper_side_img{
+        display: none;
+    }
+    .login_section h1{
+        display: none;
+    }
+    .creditCard{
+        display: block;
+    }
+}
